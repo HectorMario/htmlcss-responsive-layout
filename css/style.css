@@ -29,6 +29,10 @@ img{
     padding: 0;
 }
 
+#no-flex{
+    display: block;
+}
+
 .gap{
     display: flex;
     flex-direction: column;
@@ -183,7 +187,6 @@ div.small{
 
 .redo{
     display: flex;
-    justify-content: center;
     width: 200px;
     height: 200px;
     background-size:cover;
@@ -231,6 +234,10 @@ div.metta p{
     color: #5A6E7F;
 }
 
+div.metta strong{
+    font-size: xx-large;
+}
+
 div.metta a{
     text-align: center;
     background-color: #9792E4;
@@ -249,7 +256,27 @@ div.metta a{
 
 
 /* 5 section */
+.fin{
+    background-image: url(../img/about.jpg);
+    
+}
 
+.fin .fa-quote-left{
+    color: #9792E4;
+    font-size: x-large;
+}
+
+#mora{
+    color:#9792E4;
+}
+
+.fa-linkedin:before{
+    color: #fff;
+}
+
+.white .ok{
+    margin-top: 4vw;
+}
 /* get started */
 
 /* /main */
