@@ -105,3 +105,49 @@ div.black{
     background-color: #333333;
     width: 80%;
 }
+
+/* responsive */
+
+@media screen and (min-width: 768px) {
+    div.flex{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vw;   
+    }
+
+    div.big{
+        width: calc(100% * 0.66 - (1vw / 5));
+    }
+    div.small{
+        width: calc(100% / 3 - (7vw / 5));
+    }
+
+    div.metta{
+        width: calc(100% / 2 - (4vw/2));
+    }
+
+    div.right{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .ada{
+        display: flex;
+        width: 70%;
+        gap: 3vw;
+    }
+
+    .strategic{
+        height: 40vw;
+    }
+
+    .app{
+        margin-top: 13vw;
+    }
+
+    div.metta{
+        width: calc(100% / 3 - (4vw/2));
+    }
+}
