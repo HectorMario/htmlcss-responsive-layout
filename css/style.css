@@ -11,11 +11,23 @@ img{
 /* colori e misure */
 
 .hed{
-    height: 30vw;
     width: 100%;
 }
 
+.head div.big{
+    padding-top: 5vw ;
+}
 
+/* utility */
+
+.text-center{
+    text-align: center;
+}
+
+.gap{
+    display: flex;
+    flex-direction: column;
+}
 
 /* header */
 
@@ -23,10 +35,15 @@ header{
     display: flex;
     height: 70px;
     background-color: #0084FD;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 20px;
     color: #fff;
+}
+header .mid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul{
@@ -53,6 +70,59 @@ main{
     margin-top: 3vw;
     border-radius: 20px;
 }
+.end{
+    display: flex;
+    align-items: flex-end;
+    height: 20%;
+}
+
+.cell{
+    height: 70vw;
+}
+
+
+.hed .mid{
+    margin: 0 auto;
+}
+
+.small .mid{
+    text-align: center;
+    padding: 3vw 0;
+}
+
+.head h2, .head i{
+    color:#0084FD;
+}
+
+.head h2, .head p, .head i{
+    margin: 2vw 0;
+}
+
+.head p{
+    color: #5A6E7F;
+}
+
+.head a{
+    background-color: #0084FD;
+    text-decoration: none;
+    padding: 10px 100px;
+    border-radius: 30px;
+}
+
+.head a, .head i.fa-apple{
+    color: #fff;
+}
+
+.mid > i{
+    font-size: 13vw;
+}
+
+div.small{
+    height: 60vw;
+    display: flex;
+    align-items: center;
+}
+
 
 /* 2 section */
 
@@ -72,16 +142,74 @@ main{
 
 .strategic{
     background-color: #9792E4;
+    color: #fff;
+    gap: 8vw 0;
 }
+
 
 .white{
     background-color: #fff;
+}
+
+.app{
+    border-radius: 80px;
+    margin-top: 10vw;
+    padding: 8vw;
+}
+
+.app .gap{
+    gap: 30px 0;
+}
+
+.circle i{
+    color: black;
+    background-color: #9792E4;
+    padding: 20px 23px;
+    border-radius: 50%;
 }
 
 /* 3 section */
 
 .purple{
     background-color: #9792E4;
+    padding: 6% 2%;
+    color: #fff;
+}
+
+.redo{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-position-x: center;
+
+}
+
+.para p, .fa-quote-left:before, .fa-quote-right:before{
+    color: #fff;
+}
+
+
+/* background testimonials */
+
+.nat{
+    background-image: url(../img/testimonial1.jpg);
+}
+
+.celia{
+    background-image: url(../img/testimonial2.jpg);
+}
+
+.bob{
+    background-image: url(../img/testimonial3.jpg);
+}
+
+#pur{
+    color: #9792E4;
 }
 /* 4 section */
 
@@ -109,6 +237,14 @@ div.black{
 /* responsive */
 
 @media screen and (min-width: 768px) {
+    .mid > i{
+        font-size: 7vw;
+    }
+
+    .head div.big{
+        padding-top: 0 ;
+    }
+
     div.flex{
         display: flex;
         flex-wrap: wrap;
@@ -117,9 +253,12 @@ div.black{
 
     div.big{
         width: calc(100% * 0.66 - (1vw / 5));
+        position: relative;
     }
     div.small{
         width: calc(100% / 3 - (7vw / 5));
+        height: auto;
+
     }
 
     div.metta{
@@ -129,9 +268,88 @@ div.black{
     div.right{
         display: flex;
     }
+
+    .cell{
+        height: 30vw;
+    }
 }
 
 @media screen and (min-width: 992px) {
+    .head .hed{
+        height: 42vw;
+    }
+
+    #no-height{
+        height: 60%;
+    }
+
+    .dib{
+        display: none;
+    }   
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        gap: 3vw;
+
+    }
+
+    .plos{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    header a{
+        text-decoration: none;
+        color: #fff;
+    }
+    header .whi{
+        background-color: #fff;
+        color: black;
+        padding: 10px 15px;
+        border-radius: 20px;
+    }
+
+    .para{
+        width: calc(80%);
+    }
+
+    #no-height .para{
+        text-align: start;
+        line-height: ,1;
+    }
+
+    div.big{
+        display: flex;
+        align-items: center;
+    }
+    .head a{
+        padding: 10px 40px;
+    }
+
+    .head .mid{
+        width: 90%;
+    }
+
+    .end, .text{
+        width: calc(100% / 2 - (3vw / 2));
+    }
+
+    .end{
+        position: relative;
+        height: 42vw;
+    }
+
+    .text{
+        display: flex;
+        align-items: center;
+    }
+    
+    .cell{
+        height: 30vw;
+    }
+
 
     .ada{
         display: flex;
@@ -144,7 +362,13 @@ div.black{
     }
 
     .app{
-        margin-top: 13vw;
+        margin-top: 15vw;
+        padding: 2vw;
+    }
+
+    .app img{
+        height: 20vw;
+        width: 70vw;
     }
 
     div.metta{
