@@ -24,6 +24,11 @@ img{
     text-align: center;
 }
 
+#no-margin{
+    margin: 0;
+    padding: 0;
+}
+
 .gap{
     display: flex;
     flex-direction: column;
@@ -212,6 +217,35 @@ div.small{
     color: #9792E4;
 }
 /* 4 section */
+
+div.metta{
+    padding: 20px;
+    gap: 15px 0;
+}
+
+div.metta h3, div.metta strong{
+    color: #9792E4;
+}
+
+div.metta p{
+    color: #5A6E7F;
+}
+
+div.metta a{
+    text-align: center;
+    background-color: #9792E4;
+    width: 50%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.flex .purple{
+    display: flex;
+    justify-content: center;
+}
+
 
 
 /* 5 section */
