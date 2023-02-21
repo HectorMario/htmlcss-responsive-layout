@@ -423,9 +423,6 @@ div.black.gap{
 }
 
 @media screen and (min-width: 992px) {
-    .head .hed{
-        height: 42vw;
-    }
 
     #no-height{
         height: 60%;
