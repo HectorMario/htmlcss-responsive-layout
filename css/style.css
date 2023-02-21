@@ -114,7 +114,7 @@ main{
 .head a{
     background-color: #0084FD;
     text-decoration: none;
-    padding: 10px 100px;
+    padding: 10px 13vw;
     border-radius: 30px;
 }
 
@@ -126,8 +126,7 @@ main{
     font-size: 13vw;
 }
 
-div.small{
-    height: 60vw;
+div.small{ 
     display: flex;
     align-items: center;
 }
@@ -277,6 +276,32 @@ div.metta a{
 .white .ok{
     margin-top: 4vw;
 }
+
+div.redo.fin{
+    margin: 0;
+    position: relative;
+}
+
+div.redo .fa-quote-left:before{
+    color: #9792E4;
+    position: absolute;
+    left: 75%;
+    top: 0;
+    font-size: 60px;
+}
+
+.big .ok.gap{
+    gap: 10px;
+}
+
+div.hed.white.small{
+    margin-top: 15px;
+}
+
+a.mora{
+    background-color: #9792E4;
+    padding: 10px;
+}
 /* get started */
 
 /* /main */
@@ -304,6 +329,10 @@ div.black{
 
     .head div.big{
         padding-top: 0 ;
+    }
+
+    div.hed.white.small{
+        margin: 20px;
     }
 
     div.flex{
@@ -359,6 +388,10 @@ div.black{
         display: flex;
         gap: 20px;
         align-items: center;
+    }
+
+    a.mora{
+        padding: 10px 50px;
     }
 
     header a{
