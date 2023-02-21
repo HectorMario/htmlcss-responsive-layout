@@ -86,14 +86,13 @@ main{
 }
 .end{
     display: flex;
-    align-items: flex-end;
-    height: 20%;
+    align-items: flex-end;    
 }
 
 .cell{
-    height: 70vw;
+    width: 80%;
+    margin-top: 20px;
 }
-
 
 .hed .mid{
     margin: 0 auto;
@@ -101,7 +100,7 @@ main{
 
 .small .mid{
     text-align: center;
-    padding: 3vw 0;
+    padding: 20px 0;
 }
 
 .head h2, .head i{
@@ -396,17 +395,16 @@ div.black.gap{
     div.flex{
         display: flex;
         flex-wrap: wrap;
-        gap: 2vw;   
+        gap: 30px;   
     }
 
     div.big{
-        width: calc(100% * 0.66 - (1vw / 5));
+        width: calc(100% * 0.66 - (30px/ 5));
         position: relative;
     }
     div.small{
-        width: calc(100% / 3 - (7vw / 5));
+        width: calc(100% / 3 - (100px / 5));
         height: auto;
-
     }
 
     div.metta{
@@ -417,12 +415,22 @@ div.black.gap{
         display: flex;
     }
 
-    .cell{
-        height: 30vw;
-    }
 }
 
 @media screen and (min-width: 992px) {
+
+    .end{
+        align-self: self-end;
+        width: 50%;
+    }
+
+    .cell{
+        width: 100%;
+    }
+
+    .mid{
+        height: 100%;
+    }
 
     #no-height{
         height: 60%;
@@ -487,18 +495,12 @@ div.black.gap{
 
     .end{
         position: relative;
-        height: 42vw;
     }
 
     .text{
         display: flex;
         align-items: center;
     }
-    
-    .cell{
-        height: 30vw;
-    }
-
 
     .ada{
         display: flex;
