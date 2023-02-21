@@ -76,6 +76,7 @@ main{
 .head{
     width: 80%; 
     padding: 6vw 0;
+    max-width: 1200px;
 }
 
 .hed{
@@ -150,6 +151,7 @@ div.small{
 
 .mid{
     width: 80%;
+    max-width: 1200px;
 }
 
 .strategic{
